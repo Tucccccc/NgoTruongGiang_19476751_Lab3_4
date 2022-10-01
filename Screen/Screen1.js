@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+import { Text, View, Image, TouchableOpacity } from 'react-native';
 import React, {  useEffect, useState } from 'react';
 import { useRoute } from '@react-navigation/native';
 
@@ -30,12 +30,10 @@ export default function Screen1({ navigation }) {
       </View>
       <View style={{ alignSelf: 'flex-start', flexDirection: 'row' }}>
         <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#ff0000', marginHorizontal: 23, marginTop: 27 }}>Ở ĐÂU RẺ HƠN HOÀN TIỀN</Text>
-        {/* <Image style={{ marginTop: 27, width: 22, height: 22 }} source={require('../image/images.png')} /> */}
       </View>
 
       <TouchableOpacity onPress={() => navigation.navigate('Option')} activeOpacity={0.5} style={{ flexDirection: "row", borderRadius: 10, borderWidth: 0.8, width: 332, height: 40, alignSelf: 'center', marginTop: 19 }}>
         <Text style={{ marginLeft: 100, alignSelf: 'center', fontSize: 16, lineHeight: 21, fontWeight: 'bold', color: 'black' }}>4 MÀU - CHỌN MÀU</Text>
-        {/* <Image style={{ alignSelf: 'center', marginLeft: 60 }} source={require('../image/images.png')} /> */}
       </TouchableOpacity>
 
       <TouchableOpacity activeOpacity={0.5} style={{ flexDirection: "row", borderRadius: 10, borderWidth: 0.8, width: 332, height: 50, alignSelf: 'center', justifyContent: 'center', marginVertical: 160, backgroundColor: 'red' }}>
