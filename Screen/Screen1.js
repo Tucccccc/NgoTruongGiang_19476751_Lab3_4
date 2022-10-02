@@ -1,6 +1,7 @@
 import { Text, View, Image, TouchableOpacity } from 'react-native';
-import React, {  useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRoute } from '@react-navigation/native';
+import AntDesign from "react-native-vector-icons/AntDesign";
 
 export default function Screen1({ navigation }) {
   const route = useRoute();
@@ -16,12 +17,12 @@ export default function Screen1({ navigation }) {
     <View style={{ flex: 1, backgroundColor: '#ffffff' }}>
       <Image style={{ width: 270, height: 325, marginTop: 50, alignSelf: 'center' }} source={link} />
       <Text style={{ textAlign: 'center', marginTop: 26, fontSize: 18 }}>Điện thoại Vsmart Joy 3 - Hàng chính hãng</Text>
-      <View style={{ alignSelf: 'flex-start', flexDirection: 'row'}}>
-        <Image style={{ marginTop: 13, marginLeft: 23, width: "10%", height: "20%"}} source={require('../image/star.png')} />
-        <Image style={{ marginTop: 13, marginLeft: 2, width: "10%", height: "20%" }} source={require('../image/star.png')} />
-        <Image style={{ marginTop: 13, marginLeft: 2, width: "10%", height: "20%" }} source={require('../image/star.png')} />
-        <Image style={{ marginTop: 13, marginLeft: 2, width: "10%", height: "20%" }} source={require('../image/star.png')} />
-        <Image style={{ marginTop: 13, marginLeft: 2, width: "10%", height: "20%" }} source={require('../image/star.png')} />
+      <View style={{ alignSelf: 'flex-start', flexDirection: 'row' }}>
+        <AntDesign name='star' style={{ color: "#eee8aa", fontSize: 20, marginLeft: "5%", marginTop: "2%" }}></AntDesign>
+        <AntDesign name='star' style={{ color: "#eee8aa", fontSize: 20, marginTop: "2%" }}></AntDesign>
+        <AntDesign name='star' style={{ color: "#eee8aa", fontSize: 20, marginTop: "2%" }}></AntDesign>
+        <AntDesign name='star' style={{ color: "#eee8aa", fontSize: 20, marginTop: "2%" }}></AntDesign>
+        <AntDesign name='star' style={{ color: "#eee8aa", fontSize: 20, marginTop: "2%" }}></AntDesign>
         <Text style={{ fontSize: 15, marginHorizontal: 25, marginTop: 13 }}>(Xem 828 đánh giá)</Text>
       </View>
       <View style={{ flexDirection: 'row', marginTop: 16 }}>
